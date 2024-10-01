@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="start-page page" id="start-page">
+            <h1>&lt; <span>Front-End Quiz</span> &#47;&gt;</h1>
+            <button class="page-btn" id="start-btn">Start</button>
+        </div>
+        <div class="quiz-page page hide" id="quiz-page">
+            <div class="quiz-header">
+                <h2 id="quiz-title">Front-End Quiz</h2>
+                <p id="user-score">Your score:</p>
+            </div>
+            <div class="progress-container">
+                <button id="previous-question">Previous</button>
+                <p id="progress-indicator">Question 1 of 5</p>
+                <button id="next-question">Next</button>
+            </div>
+            <div class="question-container">
+                <p class="bracket" id="opening bracket">&lt;</p>
+                <div class="question-info">
+                    <h2 id="question-title">Question</h2>
+                    <div id="options-container">
+                        <ul class="options-list" id="options-list"></ul>
+                    </div>
+                </div>
+                <p class="bracket" id="closing-bracket">&#47;&gt;</p>
+            </div>
+        </div>
+        <div class="finish-page page hide" id="finish-page">
+            <p id="finish-message">Message</p>
+            <p id="finish-score">Score</p>
+            <button class="page-btn" id="restart-btn">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
