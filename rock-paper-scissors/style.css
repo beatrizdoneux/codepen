@@ -1,0 +1,137 @@
+/********************************************************
+GLOBAL STYLING
+********************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+body {
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	font-family: "Syncopate", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#root {
+    width: 100%;
+}
+
+.fire {
+	background: linear-gradient(to top left, red, orange);
+}
+.water {
+	background: linear-gradient(to top, navy, lightblue);
+}
+.grass {
+	background: linear-gradient(to right, darkgreen, lightgreen);
+}
+.element {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    cursor: pointer;
+    
+}
+
+/********************************************************
+START PAGE
+********************************************************/
+
+.start-page {
+	display: flex;
+	flex-direction: column;
+}
+
+.elements-container {
+	display: flex;
+	justify-content: space-around;
+    gap: 2rem;
+	width: auto;
+	align-self: center;
+	font-size: 2rem;
+	
+}
+
+.hide-icon {
+    opacity: 0;
+}
+
+.start-page-btn {
+	display: inline-block;
+	align-self: center;
+	flex-grow: 0;
+
+	font-family: "Syncopate", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+
+	border: none;
+	border-radius: 10px;
+	padding: 0.5rem 2rem;
+	margin-top: 2rem;
+}
+
+#start:hover {
+	background-color: yellow;
+	box-shadow: 1px 1px 5px darkgrey;
+	cursor: pointer;
+}
+#play:hover {
+	background-color: orange;
+	box-shadow: 1px 1px 5px darkgrey;
+	cursor: pointer;
+}
+
+/********************************************************
+GAME PAGE
+********************************************************/
+
+.game-page {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+    width: 90%;
+}
+
+.area {
+	width: 100%;
+	text-align: center;
+}
+
+.result {
+	grid-column: 1 / -1;
+}
+
+h2 {
+	flex-shrink: 0;
+}
+
+.option {
+	background-color: transparent;
+	border: none;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+	display: inline;
+	font-size: 5rem;
+	font-variant-emoji: text;
+	margin: auto;
+	text-align: center;
+    box-shadow: 1px 1px 10px lightgray;
+    margin: 0.6rem;
+}
+
+.active {
+    box-shadow: 1px 1px 5px darkgray;
+}
+
+p {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+

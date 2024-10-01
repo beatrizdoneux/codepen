@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="https://kit.fontawesome.com/2e3a421a94.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <div class="page start-page" id="start-page">
+            <div class="elements-container">
+            <p class="element fire">
+                <span class="element-name" id="fire-title">ROCK</span>
+                <i class="fa-solid fa-fire hide-icon"></i>
+            </p>
+            <p class="element water">
+                <span class="element-name" id="water-title">PAPER</span>
+                <i class="fa-solid fa-droplet hide-icon"></i>
+            </p>
+            <p class="element grass">
+                <span class="element-name" id="grass-title">SCISSORS</span>
+                <i class="fa-solid fa-leaf hide-icon"></i>
+                </p>
+            </div>
+            <button class="start-page-btn" id="start">START!</button>
+            <button class="start-page-btn hide" id="play">LET'S PLAY!</button>
+        </div>
+    
+        <div class="page game-page hide" id="game-page">
+            <div class="area" id="player">
+                <h2>You</h2>
+                <button class="option element fire" id="fire">
+                    <i class="fa-solid fa-fire"></i>
+                </button>
+                <button class="option element water" id="water">
+                    <i class="fa-solid fa-droplet"></i>
+                </button>
+                <button class="option element grass" id="grass">
+                    <i class="fa-solid fa-leaf"></i>
+                </button>
+            </div>
+    
+            <div class="area">
+                <h2>Computer</h2>
+                <button class="option" id="computer"></button>
+            </div>
+    
+            <div class="area result">
+                <h2 id=resultTitle>Let's play!</h2>
+                <p id="result">You: 0 vs Computer: 0</p>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
